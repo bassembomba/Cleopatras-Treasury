@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bank Account Management</title>
+    <link rel="stylesheet" type="text/css" href="styles/bankacc.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <div class="logo-wrapper">
+        <a
+          style="background-image: url('resources/logoblack.jpg')"
+          class="navbar-brand"
+          href="index.html"
+        >
+          <img src="resources/logoblack.jpg" class="center" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">Bank Account Management</h1>
+
+      <div class="section">
+        <h2>Close Bank Account</h2>
+        <!-- Form for closing the bank account -->
+        <form action="#" method="POST">
+          <label for="closeAccountNumber">Bank Account Number:</label>
+          <input
+            type="text"
+            id="closeAccountNumber"
+            name="closeAccountNumber"
+            required
+          />
+          <input type="submit" value="Close Account" />
+        </form>
+      </div>
+
+      <div class="section">
+        <h2>Open New Bank Account</h2>
+        <!-- Form for opening a new bank account -->
+        <form action="#" method="POST">
+          <!-- Account opening fields -->
+          <!-- ... -->
+
+          <label for="currency">Choose Currency:</label>
+          <select id="currency" name="currency">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <!-- Add more currency options as needed -->
+          </select>
+
+          <input type="submit" value="Open Account" />
+        </form>
+      </div>
+
+      <div class="section">
+        <h2>Money Transfer</h2>
+        <!-- Form for money transfer -->
+        <form action="#" method="POST">
+          <!-- Money transfer fields -->
+          <label for="recipientAccountNumber">Recipient Account Number:</label>
+          <input
+            type="text"
+            id="recipientAccountNumber"
+            name="recipientAccountNumber"
+            required
+          />
+
+          <label for="transferAmount">Transfer Amount:</label>
+          <input
+            type="number"
+            id="transferAmount"
+            name="transferAmount"
+            required
+          />
+
+          <label for="transactionType">Transaction Type:</label>
+          <select id="transactionType" name="transactionType">
+            <option value="internal">Internal</option>
+            <option value="domestic">Domestic</option>
+            <option value="international">International</option>
+          </select>
+
+          <input type="submit" value="Transfer" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
