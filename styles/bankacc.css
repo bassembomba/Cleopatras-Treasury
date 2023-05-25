@@ -3,9 +3,8 @@ body {
   background-color: #111111;
   background-image: url("/resources/bankaccback2.png");
   background-repeat: no-repeat;
-  background-size: 90% auto;
-  background-position: top left;
-
+  background-size: contain;
+  background-position: bottom;
   margin: 0;
   padding: 20px;
 }
