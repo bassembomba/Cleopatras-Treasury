@@ -2,16 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Transaction Viewer</title>
-    <link rel="stylesheet" type="text/css" href="/styles/transactions.css" />
+    <title>Transaction History</title>
+    <link rel="stylesheet" type="text/css" href="styles/transactions.css" />
   </head>
   <body>
+    <div class="sidebar">
+      <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
-      <h1>Transaction Viewer</h1>
-      <div class="options">
-        <a href="#" class="option bank">View Bank Account Transactions</a>
-        <a href="#" class="option credit-card">View Credit Card Transactions</a>
+      <h1>Transaction History</h1>
+
+      <div class="toggle-switch">
+        <input type="checkbox" id="toggle" class="toggle-input" />
+        <label for="toggle" class="toggle-label">
+          <span class="toggle-emoji">&#x1F4B3;</span>
+          <span class="toggle-emoji">&#x1F4B0;</span>
+        </label>
+      </div>
+
+      <div class="transaction-list">
+        <div class="bank-transactions transactions">
+          <div class="transaction">
+            <div class="transaction-line">
+              <span class="transaction-label">Amount:</span>
+              <span class="transaction-value">$100</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Transaction ID:</span>
+              <span class="transaction-value">123456</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Date:</span>
+              <span class="transaction-value">2023-05-21</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Type:</span>
+              <span class="transaction-value">Deposit</span>
+            </div>
+          </div>
+          <div class="transaction">
+            <div class="transaction-line">
+              <span class="transaction-label">Amount:</span>
+              <span class="transaction-value">-$50</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Transaction ID:</span>
+              <span class="transaction-value">123457</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Date:</span>
+              <span class="transaction-value">2023-03-21</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Type:</span>
+              <span class="transaction-value">Withdrawl</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-card-transactions transactions">
+          <div class="transaction">
+            <div class="transaction-line">
+              <span class="transaction-label">Amount:</span>
+              <span class="transaction-value">$50</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Transaction ID:</span>
+              <span class="transaction-value">789012</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Date:</span>
+              <span class="transaction-value">2023-05-20</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Type:</span>
+              <span class="transaction-value">Gift</span>
+            </div>
+          </div>
+          <div class="transaction">
+            <div class="transaction-line">
+              <span class="transaction-label">Amount:</span>
+              <span class="transaction-value">-$50</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Transaction ID:</span>
+              <span class="transaction-value">789011</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Date:</span>
+              <span class="transaction-value">2023-04-20</span>
+            </div>
+            <div class="transaction-line">
+              <span class="transaction-label">Type:</span>
+              <span class="transaction-value">Purchase</span>
+            </div>
+          </div>
+          <!-- Add more credit card transactions here -->
+        </div>
       </div>
     </div>
+
+    <script src="scripts/transactions.js"></script>
   </body>
 </html>
