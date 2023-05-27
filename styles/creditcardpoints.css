@@ -1,0 +1,90 @@
+body {
+  font-family: "Firme Book", Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.points-container {
+  margin-bottom: 20px;
+}
+
+.rewards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.reward {
+  background-color: #555;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.reward h3 {
+  margin-top: 0;
+}
+
+.reward p {
+  margin-bottom: 10px;
+}
+
+.redeem-button {
+  background-color: #ffb81f;
+  color: #111;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.issue-report {
+  background-color: #333;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.issue-report h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+select,
+textarea {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ffb81f;
+  color: #111;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffb81f;
+}

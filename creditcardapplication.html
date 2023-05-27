@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webleb</title>
+    <link rel="stylesheet" href="/styles/creditcardapplication.css" />
+  </head>
+  <body>
+    <div
+      class="slider"
+      x-data="{start: true, end: false}"
+      style="padding-top: 150px"
+    >
+      <div
+        class="slider__content"
+        x-ref="slider"
+        x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;"
+      >
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="resources/logoblackpngflipped.png"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 1</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="resources/ancientbrosflipped.jpg"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 2</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="resources/ancientmoneyflipped.jpeg"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 3</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card3.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 4</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card4.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 5</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card6.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 6</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card7.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 7</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card8.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 8</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card9.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 9</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img class="slider__image" src="resources/card10.jpg" alt="Image" />
+          <div class="slider__info">
+            <h2>Card 10</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slider__nav" style="display: flex; justify-content: center">
+        <button
+          class="slider__nav__button"
+          x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});"
+          x-bind:class="start ? '' : 'slider__nav__button--active'"
+        >
+          Previous
+        </button>
+        <button
+          class="slider__nav__button"
+          x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});"
+          x-bind:class="end ? '' : 'slider__nav__button--active'"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Apply for Credit Card</h1>
+      <form action="#" method="POST">
+        <label for="bankAccountNumber">Bank Account Number:</label>
+        <input
+          type="text"
+          id="bankAccountNumber"
+          name="bankAccountNumber"
+          required
+        />
+
+        <label for="cardPattern">Card Pattern:</label>
+        <select id="cardPattern" name="cardPattern">
+          <option value="card1">Card 1</option>
+          <option value="card2">Card 2</option>
+          <option value="card3">Card 3</option>
+          <option value="card4">Card 4</option>
+          <option value="card5">Card 5</option>
+          <option value="card6">Card 6</option>
+          <option value="card7">Card 7</option>
+          <option value="card8">Card 8</option>
+          <option value="card9">Card 9</option>
+          <option value="card10">Card 10</option>
+          <!-- Add more card pattern options as needed -->
+        </select>
+
+        <!-- Additional fields for credit card application -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required />
+        <br />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Credit Card Rewards</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/creditcardpoints.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Credit Card Rewards</h1>
+
+      <div class="points-container">
+        <h2>My Points: <span id="points">500</span></h2>
+      </div>
+
+      <div class="rewards-container">
+        <div class="reward">
+          <h3>Luxury Cruise</h3>
+          <p>Point Value: 200</p>
+          <button class="redeem-button" data-points="200">Redeem</button>
+        </div>
+
+        <div class="reward">
+          <h3>New Car</h3>
+          <p>Point Value: 400</p>
+          <button class="redeem-button" data-points="400">Redeem</button>
+        </div>
+
+        <div class="reward">
+          <h3>Football Match Tickets</h3>
+          <p>Point Value: 100</p>
+          <button class="redeem-button" data-points="100">Redeem</button>
+        </div>
+        <div class="reward">
+          <h3>new house</h3>
+          <p>Point Value: 100</p>
+          <button class="redeem-button" data-points="100">Redeem</button>
+        </div>
+
+        <!-- Add more rewards here -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="issue-report">
+        <h2>Report an Issue</h2>
+        <form>
+          <label for="issue-type">Issue Type:</label>
+          <select id="issue-type">
+            <option value="theft">Theft</option>
+            <option value="loss">Loss</option>
+            <option value="damage">Damage</option>
+          </select>
+          <br />
+          <label for="issue-description">Description:</label>
+          <textarea id="issue-description" rows="4" cols="50"></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/scripts/creditcardpoints.js"></script>
+  </body>
+</html>
