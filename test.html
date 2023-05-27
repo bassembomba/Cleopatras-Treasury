@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      /* Basic styles for the navigation drawer */
+      .section {
+        height: fit-content; /* Adjust the height as needed */
+        background-color: #f9f9f9;
+        padding: 0 10px 0 0;
+        text-align: center;
+
+        width: 100%;
+      }
+      #section2 {
+        width: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+      }
+
+      .about-section {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .section-title h2 {
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section-content p {
+        color: #555;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      .footer-clean {
+        padding: 50px 0;
+        background-color: #67a381;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .footer-clean h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .footer-clean ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      .footer-clean ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      .footer-clean ul a:hover {
+        opacity: 1;
+      }
+
+      .footer-clean .item.social {
+        text-align: right;
+      }
+
+      @media (max-width: 767px) {
+        .footer-clean .item {
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .footer-clean .item.social {
+          text-align: center;
+        }
+      }
+
+      .footer-clean .item.social > a {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        margin-top: 22px;
+        color: inherit;
+        opacity: 0.75;
+      }
+
+      .footer-clean .item.social > a:hover {
+        opacity: 0.9;
+      }
+
+      @media (max-width: 991px) {
+        .footer-clean .item.social > a {
+          margin-top: 40px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .footer-clean .item.social > a {
+          margin-top: 10px;
+        }
+      }
+
+      .footer-clean .copyright {
+        margin-top: 14px;
+        margin-bottom: 0;
+        font-size: 13px;
+        opacity: 0.6;
+      }
+
+      .menu-bar {
+        border-radius: 25px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: inline-flex;
+        background-color: #67a381;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        align-items: center;
+        padding: 0 0 0 0;
+        margin: 50px 0 0 0;
+        justify-content: flex-start;
+      }
+      .menu-bar li {
+        list-style: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 12px 16px;
+        margin: 0 8px;
+        position: relative;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .menu-bar li::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transition: 0.2s;
+        border-radius: 25px;
+      }
+      .menu-bar li:hover {
+        color: white;
+      }
+      .menu-bar li:hover::before {
+        background: black;
+        box-shadow: 0px 3px 20px 0px black;
+        transform: scale(1.2);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        overflow-y: scroll;
+        display: flex;
+        justify-content: center;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-size: 16px;
+        margin-right: 50px;
+        margin-left: 50px;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Initially hidden off the screen */
+        width: 250px;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+        transition: left 0.3s ease;
+      }
+
+      .navbar.open {
+        left: 0; /* Slides in from the left when open class is applied */
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        text-align: left;
+      }
+
+      .navbar li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover {
+        background-color: #111;
+      }
+
+      .openbtn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: transparent;
+        color: #111;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .notifications {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: red;
+        color: #fff;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 10px;
+        font-size: 8px;
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 200px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: none;
+        z-index: 1;
+      }
+
+      .dropdown a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .notifications:hover .dropdown {
+        display: block;
+      }
+
+      /* Styles for the rest of the page */
+      .content {
+        margin-top: 50px; /* Add margin to accommodate the footer */
+        padding: 20px;
+        min-height: calc(100vh - 150px);
+        width: 100%;
+        box-sizing: border-box;
+      }
+    </style>
+    <script>
+      // JavaScript code to toggle the navigation drawer
+
+      document.addEventListener("click", function (event) {
+        var navbar = document.getElementById("navbar");
+        var openbtn = document.getElementById("openbtn");
+
+        if (!navbar.contains(event.target) && event.target !== openbtn) {
+          navbar.classList.remove("open");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="section" id="section2">
+      <h1><img src="resources/logoblack.jpg" /></h1>
+      <nav>
+        <ul class="menu-bar">
+          <li>Home</li>
+          <li>Contact us</li>
+          <li>About us</li>
+          <li><a href="Sign_up.html">Sign up</a></li>
+          <li><a href="Login.html">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="section">
+      <div class="content">
+        <section class="about-section">
+          <div class="container">
+            <div class="section-title">
+              <h2>About Us</h2>
+            </div>
+            <div class="section-content">
+              <p>
+                Welcome to XYZ Bank, a leading financial institution dedicated
+                to providing excellent banking services to our customers. With
+                years of experience in the industry, we strive to deliver
+                innovative solutions and exceptional customer service.
+              </p>
+              <p>
+                At XYZ Bank, we understand the importance of trust and security
+                when it comes to managing your finances. That's why we have
+                implemented robust security measures to protect your personal
+                and financial information.
+              </p>
+              <p>
+                Our team of knowledgeable professionals is committed to helping
+                you achieve your financial goals. Whether you're looking to save
+                for the future, apply for a loan, or manage your investments, we
+                have the expertise to guide you every step of the way.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="section">
+      <div class="footer-clean">
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#">Web design</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Hosting</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Legacy</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Careers</h3>
+                <ul>
+                  <li><a href="#">Job openings</a></li>
+                  <li><a href="#">Employee success</a></li>
+                  <li><a href="#">Benefits</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 item social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a
+                ><a href="#"><i class="icon ion-social-twitter"></i></a
+                ><a href="#"><i class="icon ion-social-snapchat"></i></a
+                ><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <p class="copyright">Company Name ©️ 2018</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
