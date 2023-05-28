@@ -1,0 +1,51 @@
+body {
+    background-color: #111111;
+    color: white;
+    background-image: url("/JRBO/resources/reports.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .title-text {
+    color: white;
+    font-size: 50px;
+  }
+  
+  .report-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .report-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .report-text {
+    flex: 1;
+    font-size: 20px;
+  }
+  
+  .resolve-button {
+    background-color: #ffb81f;
+    color: #000000;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .resolve-button:hover {
+    background-color: #ffbe33;
+  }

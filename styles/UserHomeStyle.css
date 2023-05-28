@@ -164,7 +164,7 @@ body {
   #mainImage {
     height: 580px;
     padding-top: 1px;
-    background: #111111 url(/resources/loginInspo.jpg) no-repeat top center;
+    background: #111111 url(/JRBO/resources/loginInspo.jpg) no-repeat top center;
     background-size: cover;
     opacity: 0.65;
   }
@@ -230,7 +230,7 @@ body {
     text-align: center;
   }
   #features ul li.feature-1  {
-    background: url("/resources/ancientloan.jpg") no-repeat top center;
+    background: url("/JRBO/resources/ancientloan.jpg") no-repeat top center;
     background-size: 235px;
 
    
@@ -261,7 +261,7 @@ body {
 
   
   #features ul li.feature-2 {
-    background: url("/resources/creditcard.jpeg") no-repeat top center;
+    background: url("/JRBO/resources/creditcard.jpeg") no-repeat top center;
     background-size: 235px;
   }
 
@@ -285,7 +285,7 @@ body {
 
 
   #features ul li.feature-3 {
-    background: url("/resources/bill.jpg") no-repeat top center;
+    background: url("/JRBO/resources/bill.jpg") no-repeat top center;
     background-size: 235px;
   }
   #features ul li.feature-3 button[type="submit"] {
@@ -307,7 +307,7 @@ body {
   }
 
   #features ul li.feature-4 {
-    background: url("/resources/ancientbros.jpg") no-repeat top center;
+    background: url("/JRBO/resources/ancientbros.jpg") no-repeat top center;
     background-size: 235px;
   }
 
@@ -330,7 +330,7 @@ body {
 
   }
   #features ul li.feature-5 {
-    background: url("/resources/ancientmoney.jpeg") no-repeat top center;
+    background: url("/JRBO/resources/ancientmoney.jpeg") no-repeat top center;
     background-size: 235px;
   }
   #features ul li.feature-5 button[type="submit"] {
@@ -351,7 +351,7 @@ body {
     background-color: #ffbe33;
   }
   #features ul li.feature-6 {
-    background: url("/resources/reminder.jpg") no-repeat top center;
+    background: url("/JRBO/resources/reminder.jpg") no-repeat top center;
     background-size: 235px;
   }
   #features ul li.feature-6 button[type="submit"] {
