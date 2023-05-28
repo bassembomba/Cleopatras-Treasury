@@ -1,0 +1,148 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("/resources/billsbackground.png");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+  opacity: 0.8;
+}
+.sidebar.collapsed {
+  transform: translateX(0);
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  left: 285px;
+  width: 50px;
+  height: 50px;
+  right: -30px;
+  font-size: 24px;
+  background-color: #222222;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  margin-top: 50px;
+}
+
+.sidebar-menu ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+.content.expanded {
+  margin-left: 250px;
+}
+
+.bill-hide {
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+  margin-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bills-container {
+  margin-bottom: 40px;
+}
+
+.bill {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bill-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bill-amount {
+  font-weight: bold;
+}
+
+.bill-type {
+  margin-bottom: 5px;
+}
+
+.bill-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.bill-buttons button {
+  background-color: #ffb81f;
+  color: #000;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.bill-details button {
+  background-color: #555;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bill-buttons button:last-child {
+  margin-right: 0;
+}

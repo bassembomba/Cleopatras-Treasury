@@ -1,6 +1,11 @@
-/*
-See on github: https://github.com/muhammederdem/credit-card-form
-*/
+const sidebarToggle = document.getElementById("sidebarToggle");
+const sidebar = document.querySelector(".sidebar");
+const content = document.querySelector(".content");
+
+sidebarToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("collapsed");
+  content.classList.toggle("expanded");
+});
 
 new Vue({
   el: "#app",
