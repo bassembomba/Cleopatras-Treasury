@@ -1,75 +1,77 @@
 <html>
+  <head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/Admin.css" />
+  </head>
 
-<head>
-  <title>Admin Page</title>
-  <link rel="stylesheet" type="text/css" href="styles/Admin.css">
-</head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>
+          <span class="admin-text">Admin</span>
+          <strong><span class="page-text">Page</span></strong>
+        </h1>
+      </header>
 
-<body>
-  <div id="container">
-    <header>
-      <h1><span class="admin-text">Admin</span> <strong><span class="page-text">Page</span></strong></h1>
-    </header>
-    
-    <div class="admin-controls">
-      <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search client...">
-        <button id="search-button">Search</button>
+      <div class="admin-controls">
+        <div class="search-container">
+          <input type="text" id="search-bar" placeholder="Search client..." />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="block-unblock-container">
+          <button id="block-button">Block</button>
+          <button id="unblock-button">Unblock</button>
+        </div>
       </div>
-      <div class="block-unblock-container">
-        <button id="block-button">Block</button>
-        <button id="unblock-button">Unblock</button>
+
+      <section>
+        <h2 class="section-title">Technical Issues</h2>
+        <a href="techreports.html">
+          <button id="technical-reports-button">View Reports</button>
+        </a>
+      </section>
+
+      <section>
+        <h2>Announcement</h2>
+        <textarea
+          class="announcement-text"
+          placeholder="Enter your announcement here"
+        ></textarea>
+        <button class="announcement-btn">Post Announcement</button>
+      </section>
+    </div>
+    <div class="sidebar">
+      <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="graph">
+      <h2 class="graph-title">Clients</h2>
+      <div class="bar" style="width: 10%">
+        <div class="bar-label">Elite</div>
+        <div class="bar-value">10%</div>
+      </div>
+      <div class="bar" style="width: 15%">
+        <div class="bar-label">VIP</div>
+        <div class="bar-value">15%</div>
+      </div>
+      <div class="bar" style="width: 15%">
+        <div class="bar-label">Premium</div>
+        <div class="bar-value">15%</div>
+      </div>
+      <div class="bar" style="width: 60%">
+        <div class="bar-label">Consumers</div>
+        <div class="bar-value">60%</div>
       </div>
     </div>
-    
-    <section>
-      <h2 class="section-title">Technical Issues</h2>
-      <a href="techreports.html">
-        <button id="technical-reports-button">View Reports</button>
-      </a>
-    </section>
-    
-    
-    <section>
-      <h2>Announcement</h2>
-      <textarea class="announcement-text" placeholder="Enter your announcement here"></textarea>
-      <button class="announcement-btn">Post Announcement</button>
-    </section>
-    
-  </div>
-  <div class="sidebar">
-    <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
-    <nav class="sidebar-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
 
-  <div class="graph">
-    <h2 class="graph-title">Clients</h2>
-    <div class="bar" style="width: 10%;">
-      <div class="bar-label">Elite</div>
-      <div class="bar-value">10%</div>
-    </div>
-    <div class="bar" style="width: 15%;">
-      <div class="bar-label">VIP</div>
-      <div class="bar-value">15%</div>
-    </div>
-    <div class="bar" style="width: 15%;">
-      <div class="bar-label">Premium</div>
-      <div class="bar-value">15%</div>
-    </div>
-    <div class="bar" style="width: 60%;">
-      <div class="bar-label">Consumers</div>
-      <div class="bar-value">60%</div>
-    </div>
-  </div>
-  
-  <script src="/JRBO/scripts/Admin.js"></script>
-</body>
-
+    <script src="/scripts/Admin.js"></script>
+  </body>
 </html>
