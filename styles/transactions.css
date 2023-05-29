@@ -142,8 +142,15 @@ h1 {
 .transactions {
   display: none;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .transactions .transaction {
+  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
   width: 1000px;
   padding: 20px 20px;
   margin-bottom: 20px;

@@ -1,6 +1,11 @@
 const sidebarToggle = document.getElementById("sidebarToggle");
 const sidebar = document.querySelector(".sidebar");
 const content = document.querySelector(".content");
+const toggle = document.getElementById("toggle");
+const bankTransactionsTable = document.querySelector(".bank-transactions");
+const creditCardTransactionsTable = document.querySelector(
+  ".credit-card-transactions"
+);
 
 sidebarToggle.addEventListener("click", () => {
   sidebar.classList.toggle("collapsed");
@@ -16,9 +21,3 @@ toggle.addEventListener("change", () => {
     creditCardTransactionsTable.style.display = "none";
   }
 });
-
-const toggle = document.getElementById("toggle");
-const bankTransactionsTable = document.querySelector(".bank-transactions");
-const creditCardTransactionsTable = document.querySelector(
-  ".credit-card-transactions"
-);

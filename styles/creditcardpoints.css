@@ -88,6 +88,12 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #ffb81f;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .sidebar {
   position: fixed;

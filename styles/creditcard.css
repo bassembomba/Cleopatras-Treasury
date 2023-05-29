@@ -131,6 +131,12 @@
   cursor: pointer;
   transition: 0.2s linear;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .container form .submit-btn:hover {
   letter-spacing: 2px;
