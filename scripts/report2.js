@@ -6,3 +6,8 @@ sidebarToggle.addEventListener("click", () => {
   sidebar.classList.toggle("collapsed");
   content.classList.toggle("expanded");
 });
+
+function reportPopup() {
+  alert("your report hs been sent!");
+  return false;
+}

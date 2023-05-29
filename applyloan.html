@@ -1,101 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Apply for Loan</title>
-  <link rel="stylesheet" type="text/css" href="styles/applyloan.css" />
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="sidebar">
-    <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
-    <nav class="sidebar-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="logo">
-    <div class="logo-wrapper">
-      <a
-        style="background-image: url('resources/logoblack.jpg')"
-        class="navbar-brand"
-        href="index.html"
-      >
-        <img src="resources/logoblack.jpg" class="center" />
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apply for Loan</title>
+    <link rel="stylesheet" type="text/css" href="styles/applyloan.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="userhome.html">Home</a></li>
+          <li><a href="creditcard.html">Credit Card</a></li>
+          <li><a href="bankacc.html">Bank Account</a></li>
+          <li><a href="bills.html">Bills</a></li>
+          <li><a href="loan.html">loans</a></li>
+          <li><a href="report2.html">Report an Issue</a></li>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <li><a href="index.html">Log Out</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <div class="container">
-    <h1 class="title">Apply for Loan</h1>
+    <div class="logo">
+      <div class="logo-wrapper">
+        <a
+          style="background-image: url('resources/logoblack.jpg')"
+          class="navbar-brand"
+          href="index.html"
+        >
+          <img src="resources/logoblack.jpg" class="center" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title">Apply for Loan</h1>
 
-    <div class="section">
-      <h2>Loan Type</h2>
-      <!-- Form for choosing loan type -->
-      <form action="#" method="POST" id="loanTypeForm">
-        <label for="chooseLoanType">Choose Loan Type:</label>
-        <select id="type" name="type">
-          <option value="Car">Car</option>
-          <option value="Personal">Personal</option>
-        </select>
-        <input type="submit" value="Confirm Type" />
-      </form>
+      <div class="section">
+        <h2>Loan Type</h2>
+        <!-- Form for choosing loan type -->
+        <form action="#" method="POST" id="loanTypeForm">
+          <label for="chooseLoanType">Choose Loan Type:</label>
+          <select id="type" name="type">
+            <option value="Car">Car</option>
+            <option value="Personal">Personal</option>
+          </select>
+          <input type="submit" value="Confirm Type" />
+        </form>
+      </div>
+
+      <div class="section hidden" id="loanAmountSection">
+        <h2>Loan Amount</h2>
+        <!-- Form for choosing loan amount -->
+        <form action="#" method="POST">
+          <label for="chooseAmount">Loan Amount:</label>
+          <input type="text" id="loanAmount" name="loanAmount" required />
+          <input type="submit" value="Confirm Amount" />
+        </form>
+      </div>
+
+      <div class="section hidden" id="purposeSection">
+        <h2>Purpose for Loan</h2>
+        <!-- Form for stating the purpose -->
+        <form onsubmit="return displayLoan()">
+          <label for="typepurpose">Purpose for Loan:</label>
+          <input
+            type="text"
+            id="applyingpurpose"
+            name="applyingpurpose"
+            required
+          />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
 
-    <div class="section hidden" id="loanAmountSection">
-      <h2>Loan Amount</h2>
-      <!-- Form for choosing loan amount -->
-      <form action="#" method="POST">
-        <label for="chooseAmount">Loan Amount:</label>
-        <input
-          type="text"
-          id="loanAmount"
-          name="loanAmount"
-          required
-        />
-        <input type="submit" value="Confirm Amount" />
-      </form>
-    </div>
+    <script>
+      function displayLoan() {
+        alert("your loan application will be reviewed soon!");
+        return false;
+      }
+      const sidebarToggle = document.getElementById("sidebarToggle");
+      const sidebar = document.querySelector(".sidebar");
+      const content = document.querySelector(".content");
 
-    <div class="section hidden" id="purposeSection">
-      <h2>Purpose for Loan</h2>
-      <!-- Form for stating the purpose -->
-      <form action="#" method="POST">
-        <label for="typepurpose">Purpose for Loan:</label>
-        <input
-          type="text"
-          id="applyingpurpose"
-          name="applyingpurpose"
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </div>
+      sidebarToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
+        content.classList.toggle("expanded");
+      });
 
-  <script>
-    const loanTypeForm = document.getElementById("loanTypeForm");
-    const loanAmountSection = document.getElementById("loanAmountSection");
-    const purposeSection = document.getElementById("purposeSection");
+      const loanTypeForm = document.getElementById("loanTypeForm");
+      const loanAmountSection = document.getElementById("loanAmountSection");
+      const purposeSection = document.getElementById("purposeSection");
 
-    loanTypeForm.addEventListener("submit", function (event) {
-      event.preventDefault();
+      loanTypeForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-      loanAmountSection.classList.remove("hidden");
-    });
+        loanAmountSection.classList.remove("hidden");
+      });
 
-    loanAmountSection.addEventListener("submit", function (event) {
-      event.preventDefault();
+      loanAmountSection.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-      purposeSection.classList.remove("hidden");
-    });
-  </script>
-</body>
+        purposeSection.classList.remove("hidden");
+      });
+    </script>
+  </body>
 </html>

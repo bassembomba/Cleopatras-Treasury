@@ -1,8 +1,11 @@
-const toggle = document.getElementById("toggle");
-const bankTransactionsTable = document.querySelector(".bank-transactions");
-const creditCardTransactionsTable = document.querySelector(
-  ".credit-card-transactions"
-);
+const sidebarToggle = document.getElementById("sidebarToggle");
+const sidebar = document.querySelector(".sidebar");
+const content = document.querySelector(".content");
+
+sidebarToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("collapsed");
+  content.classList.toggle("expanded");
+});
 
 toggle.addEventListener("change", () => {
   if (toggle.checked) {
@@ -13,11 +16,9 @@ toggle.addEventListener("change", () => {
     creditCardTransactionsTable.style.display = "none";
   }
 });
-const sidebarToggle = document.getElementById("sidebarToggle");
-const sidebar = document.querySelector(".sidebar");
-const content = document.querySelector(".content");
 
-sidebarToggle.addEventListener("click", () => {
-  sidebar.classList.toggle("collapsed");
-  content.classList.toggle("expanded");
-});
+const toggle = document.getElementById("toggle");
+const bankTransactionsTable = document.querySelector(".bank-transactions");
+const creditCardTransactionsTable = document.querySelector(
+  ".credit-card-transactions"
+);

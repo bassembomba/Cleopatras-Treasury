@@ -147,7 +147,7 @@
     </div>
     <div class="container">
       <h1>Apply for Credit Card</h1>
-      <form action="#" method="POST">
+      <form onsubmit="return displayApplication()">
         <label for="bankAccountNumber">Bank Account Number:</label>
         <input
           type="text"
@@ -187,6 +187,10 @@
       </form>
     </div>
     <script>
+      function displayApplication() {
+        alert("your application will be reviewed shortly!");
+        return false;
+      }
       (() => {
         // packages/alpinejs/src/scheduler.js
         var flushPending = false;

@@ -27,3 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const submitBtn = document.querySelectorAll(".submit-btn");
+
+  submitBtn.forEach(function (button) {
+    button.addEventListener("click", function () {
+      alert(
+        "Your report has been sent! one of our staff members will get back to you shortly."
+      );
+    });
+  });
+});

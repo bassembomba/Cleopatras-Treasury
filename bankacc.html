@@ -60,7 +60,7 @@
       <div class="section">
         <h2>Close Bank Account</h2>
         <!-- Form for closing the bank account -->
-        <form action="#" method="POST">
+        <form onsubmit="return displayAlert()">
           <label for="closeAccountNumber">Bank Account Number:</label>
           <input
             type="text"
@@ -75,7 +75,7 @@
       <div class="section">
         <h2>Open New Bank Account</h2>
         <!-- Form for opening a new bank account -->
-        <form action="#" method="POST">
+        <form onsubmit="return displayOpen()">
           <!-- Account opening fields -->
           <!-- ... -->
 
@@ -94,7 +94,7 @@
       <div class="section">
         <h2>Money Transfer</h2>
         <!-- Form for money transfer -->
-        <form action="#" method="POST">
+        <form onsubmit="return displayTransfer()">
           <!-- Money transfer fields -->
           <label for="recipientAccountNumber">Recipient Account Number:</label>
           <input
