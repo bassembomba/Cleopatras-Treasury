@@ -1,84 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>REPORT</title>
     <style>
-     
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        h1 {
-  font-size: 48px;
-  color: #d99826;
-  margin-bottom: 30px;
-  font-family: "Firme Book", Arial, sans-serif;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-}
-        
-        .form-group {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        
-       
-        
-        .form-group input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-            color: white;
-            height: 200px;
-            resize: vertical;
-            background-color: #333;
-        }
-        
-        .form-group input[type="text"]::placeholder {
-            font-size: 16px;
-            position: absolute;
-            top: 10px;
-        }
-        
-        .form-group input[type="submit"] {
-            background-color: #ffb81f;
-            color: #111;
-            border: none;
-            padding: 20px 40px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 0;
-        } 
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #222222;
+        color: #ffffff;
+        padding: 20px;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+        z-index: 9999;
+        box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+        opacity: 0.8;
+      }
+      .sidebar.collapsed {
+        transform: translateX(0);
+      }
+
+      .sidebar-toggle {
+        position: absolute;
+        top: 20px;
+        left: 285px;
+        width: 50px;
+        height: 50px;
+        right: -30px;
+        font-size: 24px;
+        background-color: #222222;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .sidebar-menu {
+        margin-top: 50px;
+      }
+
+      .sidebar-menu ul {
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .sidebar-menu li {
+        margin-bottom: 10px;
+      }
+
+      .sidebar-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: x-large;
+      }
+
+      .content {
+        padding: 20px;
+        margin-left: 0;
+        transition: margin-left 0.3s ease;
+      }
+      .content.expanded {
+        margin-left: 250px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: #d99826;
+        margin-bottom: 30px;
+        font-family: "Firme Book", Arial, sans-serif;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-group input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        color: white;
+        height: 200px;
+        resize: vertical;
+        background-color: #333;
+      }
+
+      .form-group input[type="text"]::placeholder {
+        font-size: 16px;
+        position: absolute;
+        top: 10px;
+      }
+
+      .form-group input[type="submit"] {
+        background-color: #ffb81f;
+        color: #111;
+        border: none;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 0;
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>REPORT</h1>
-        <form action="#">
-            <div class="form-group">
-                
-                <input type="text" id="report-input" name="report" placeholder="Enter your report....">
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
+  </head>
+  <body>
+    <div class="sidebar">
+      <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+      <nav class="sidebar-menu">
+        <ul>
+          <li><a href="userhome.html">Home</a></li>
+          <li><a href="creditcard.html">Credit Card</a></li>
+          <li><a href="bankacc.html">Bank Account</a></li>
+          <li><a href="bills.html">Bills</a></li>
+          <li><a href="loan.html">loans</a></li>
+          <li><a href="report2.html">Report an Issue</a></li>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <li><a href="index.html">Log Out</a></li>
+        </ul>
+      </nav>
     </div>
-</body>
+    <div class="container">
+      <h1>REPORT</h1>
+      <form action="#">
+        <div class="form-group">
+          <input
+            type="text"
+            id="report-input"
+            name="report"
+            placeholder="Enter your report...."
+          />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="scripts/report2.js"></script>
+  </body>
 </html>

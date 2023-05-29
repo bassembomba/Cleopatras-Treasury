@@ -1,10 +1,9 @@
 body {
   height: 580px;
   padding-top: 1px;
-  background: #111111 url("/JRBO/resources/Admin.jpg") no-repeat top center;
+  background: #111111 url("/resources/Admin.jpg") no-repeat top center;
   background-size: cover;
-  opacity: 0.65
-  ;
+  opacity: 0.65;
 }
 
 #container {
@@ -31,9 +30,9 @@ header {
 #search-bar {
   flex: 1;
   margin-right: 10px;
- 
-    width: 100px; /* Adjust the width as desired */
-    height: 40px; /* Adjust the height as desired */
+
+  width: 100px; /* Adjust the width as desired */
+  height: 40px; /* Adjust the height as desired */
 }
 
 #search-button {
@@ -95,7 +94,6 @@ header {
   font-size: 60px;
 }
 
-
 .announcement-text {
   width: 100%;
   padding: 10px;
@@ -106,7 +104,6 @@ header {
   /* border-radius: 5px; */
   resize: vertical;
 }
-
 
 .announcement-btn {
   padding: 8px 15px;
@@ -131,7 +128,7 @@ header {
   transform: translateX(-100%);
   z-index: 9999;
   box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
-  opacity: 1.0;
+  opacity: 1;
 }
 .sidebar.collapsed {
   transform: translateX(0);
@@ -180,12 +177,9 @@ header {
   margin-left: 250px;
 }
 
-
-
 .graph {
   background-color: transparent;
   padding: 20px;
-  
 }
 
 .graph-title {
@@ -193,8 +187,6 @@ header {
   text-align: left;
   font-size: x-large;
   font-size: 25px;
-
-  
 }
 
 .bar {
