@@ -307,138 +307,181 @@ header nav ul li a {
   background-size: 235px;
 }
 
-#features ul li.feature-4 button[type="submit"] {
-  width: 80%;
-  padding: 10px;
-  background-color: #ffb81f;
-  color: #000000;
-  font: Firme Book;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  #features ul li.feature-4 button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffb81f;
+    color: #000000;
+    font:Firme Book ;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #features ul li.feature-4[type="submit"]:hover {
+    background-color: #ffbe33;
+
+  }
+  #features ul li.feature-5 {
+    background: url("/JRBO/resources/ancientmoney.jpeg") no-repeat top center;
+    background-size: 235px;
+  }
+  #features ul li.feature-5 button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffb81f;
+    color: #000000;
+    font:Firme Book ;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #features ul li.feature-5[type="submit"]:hover {
+    background-color: #ffbe33;
+  }
+  #features ul li.feature-6 {
+    background: url("/JRBO/resources/reminder.jpg") no-repeat top center;
+    background-size: 235px;
+  }
+  #features ul li.feature-6 button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffb81f;
+    color: #000000;
+    font:Firme Book ;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #features ul li.feature-6[type="submit"]:hover {
+    background-color: #ffbe33;
+  }
+  
+  #mainContent {
+    background-color: #212121;
+    padding: 60px 0;
+    text-align: center;
+  }
+  #mainContent h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+  }
+  #mainContent a {
+    background-color: #212121;
+  }
+  #mainContent article {
+    padding: 60px 70px;
+    text-align: center;
+    font-size: larger;
+  }
+  #mainContent blockquote {
+    background-color: #212121;
+  }
+  
+  #maiinContent a img {
+    margin: 20px 0;
+  }
+  
+  #cta {
+    padding: 60px 0;
+    text-align: center;
+  }
+  #cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+  }
+  .button-2 {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #02b8dd;
+    color: #02b8dd;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .button-2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+  }
+  footer {
+    padding: 60px 0;
+    background-color: #212121;
+  }
+  #footer-info {
+    width: 380px;
+    float: left;
+    margin-top: 10px;
+  }
+  #footer-links {
+    width: 520px;
+    float: right;
+  }
+  #footer-links ul {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+  }
+  #footer-links ul li {
+    margin: 10px 0;
+  }
+  /* Add your custom styles here */
+.reminder-bell {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
 }
 
-#features ul li.feature-4[type="submit"]:hover {
-  background-color: #ffbe33;
-}
-#features ul li.feature-5 {
-  background: url("/resources/ancientmoney.jpeg") no-repeat top center;
-  background-size: 235px;
-}
-#features ul li.feature-5 button[type="submit"] {
-  width: 80%;
-  padding: 10px;
-  background-color: #ffb81f;
-  color: #000000;
-  font: Firme Book;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#features ul li.feature-5[type="submit"]:hover {
-  background-color: #ffbe33;
-}
-#features ul li.feature-6 {
-  background: url("/resources/reminder.jpg") no-repeat top center;
-  background-size: 235px;
-}
-#features ul li.feature-6 button[type="submit"] {
-  width: 80%;
-  padding: 10px;
-  background-color: #ffb81f;
-  color: #000000;
-  font: Firme Book;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#features ul li.feature-6[type="submit"]:hover {
-  background-color: #ffbe33;
-}
-
-#mainContent {
-  background-color: #212121;
-  padding: 60px 0;
-  text-align: center;
-}
-#mainContent h3 {
+.reminder-bell:hover .reminder-content {
   display: block;
-  margin: 0 auto 20px auto;
-  width: 400px;
-  border-bottom: 1px solid #02b8dd;
-  padding: 0 0 20px 0;
-}
-#mainContent a {
-  background-color: #212121;
-}
-#mainContent article {
-  padding: 60px 70px;
-  text-align: center;
-  font-size: larger;
-}
-#mainContent blockquote {
-  background-color: #212121;
 }
 
-#maiinContent a img {
-  margin: 20px 0;
+.reminder-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-#cta {
-  padding: 60px 0;
-  text-align: center;
+.reminder-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-#cta h3 {
-  display: block;
-  margin: 0 auto 20px auto;
-  width: 400px;
-  border-bottom: 1px solid #02b8dd;
-  padding: 0 0 20px 0;
+
+.reminder-content li {
+  padding: 5px 0;
+  text-align: left;
 }
-.button-2 {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #02b8dd;
-  color: #02b8dd;
-  border-radius: 3px;
-  width: 180px;
-  height: 50px;
-  font-size: 20px;
-  line-height: 50px;
+
+.reminder-content li:before {
+  content: "\2022";
+  padding-right: 5px;
 }
-.button-2:hover {
-  background-color: #02b8dd;
-  color: #fff;
-}
-footer {
-  padding: 60px 0;
-  background-color: #212121;
-}
-#footer-info {
-  width: 380px;
-  float: left;
-  margin-top: 10px;
-}
-#footer-links {
-  width: 520px;
-  float: right;
-}
-#footer-links ul {
-  width: 150px;
-  float: left;
-  margin-left: 20px;
-}
-#footer-links ul li {
-  margin: 10px 0;
-}
+
+  

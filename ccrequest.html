@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Requests</title>
+  <link rel="stylesheet" type="text/css" href="styles/viewloan.css" />
+  <style>
+    
+  .container {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  caption {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  button.check {
+    background-color: rgb(120, 211, 120);
+    color: white;
+  }
+  button.cross {
+    background-color:rgb(227, 79, 79);
+    color: white;
+  }
+
+
+    body {
+      background-color: #000000;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid #ffffff;
+      margin-top: 20px;
+    }
+
+    caption h1 {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    th {
+      color: #ffb81f;
+      text-align: left;
+      padding: 10px;
+      background-color: #111111;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    td {
+      color: #ffffff;
+      text-align: left;
+      padding: 10px;
+      background-color: #222222;
+      border: 1px solid #ffffff;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #111111;
+    }
+
+    tr:hover td {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+    <div class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">&#9776;</button>
+        <nav class="sidebar-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logo">
+        <div class="logo-wrapper">
+          <a
+            style="background-image: url('resources/logoblack.jpg')"
+            class="navbar-brand"
+            href="index.html"
+          >
+            <img src="resources/logoblack.jpg" class="center" />
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <table>
+          <caption><h1>Credit Card Requests</h1></caption>
+          <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>User ID</th>
+            <th>Bank Account Number</th>
+            <th>Card Pattern</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>3-7-2021 9:47:56.</td>
+            <td>1</td>
+            <td>10006754444</td>
+            <td>Card 3</td>
+            <td><button class="check" onclick="removeRow(this)">✔</button><button class="cross" onclick="removeRow(this)">✘</button></td>
+
+          </tr>
+          <tr>
+            <td>10-9-2021 2:55:17.</td>
+            <td>55</td>
+            <td>1000664232</td>
+            <td>Card 8</td>
+            <td><button class="check" onclick="removeRow(this)">✔</button><button class="cross" onclick="removeRow(this)">✘</button></td>
+
+          </tr>
+          <tr>
+            <td>1-11-2021 3:20:11</td>
+            <td>23</td>
+            <td>10003665980</td>
+            <td>Card 2</td>
+            <td><button class="check" onclick="removeRow(this)">✔</button><button class="cross" onclick="removeRow(this)">✘</button></td>
+
+          </tr>
+          <tr>
+            <td>22-12-2021 7:00:00</td>
+            <td>600</td>
+            <td>10009980021</td>
+            <td>Card 10</td>
+            <td><button class="check" onclick="removeRow(this)">✔</button><button class="cross" onclick="removeRow(this)">✘</button></td>
+
+          </tr>
+          <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+      
+      <script>
+        function removeRow(button) {
+          var row = button.parentNode.parentNode;
+          row.parentNode.removeChild(row);
+        }
+      </script>
+      
+</body>
+</html>
