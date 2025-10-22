@@ -69,4 +69,10 @@ Want to contribute or try more?
 - Open an Issue if you see a bug or have a feature idea.
 - Prefer pull requests? Submit one with small, focused changes.
 
+Mood Board:
+<img width="1150" height="759" alt="Screenshot 2023-05-21 220207" src="https://github.com/user-attachments/assets/ed1896c3-9eeb-4205-833a-13357e183e03" />
+<img width="1444" height="949" alt="Screenshot 2023-05-23 141158" src="https://github.com/user-attachments/assets/190fb698-6258-4864-a23c-2a860a979ce1" />
+<img width="1128" height="718" alt="Screenshot 2023-05-21 213239" src="https://github.com/user-attachments/assets/ac45d075-031d-450b-ae29-d9b7a3ce4f6d" />
+
+
 Thanks for stopping by — explore Cleopatra’s Treasury and imagine where it could go next! 👑
