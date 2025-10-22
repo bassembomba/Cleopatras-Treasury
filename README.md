@@ -34,14 +34,29 @@ Quick preview (try it now)
 3. Visit http://localhost:8000 and click around!
 
 Top pages you'll love
-- index.html — landing / login
-- register.html — sign-up form (play with fields)
-- UserHome.html — customer dashboard
-- homeBanker.html — banker dashboard
-- Admin.html — admin console
+- home.html — User's home dashboard
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 182157" src="https://github.com/user-attachments/assets/6270bc6c-33bd-41d2-b6b4-f44bda08cebe" />
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 182218" src="https://github.com/user-attachments/assets/1e7fb373-642a-4093-bcdd-a5bb6dfa3327" />
+
 - creditcardapplication.html — very detailed application form
-- transactions.html — transaction history and statements
-- loanrequests.html — loan application & review flows
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 182001" src="https://github.com/user-attachments/assets/7e230c25-ccb2-49e1-b218-97694400614a" />
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 194152" src="https://github.com/user-attachments/assets/c1d2b1e1-1434-4dd7-9694-7cee11ef45be" />
+
+- index.html — landing / login
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 182120" src="https://github.com/user-attachments/assets/4544b0b5-df5f-477a-90ff-ab8a18ebe49d" />
+
+- creditcard.html — Credit card page
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 181826" src="https://github.com/user-attachments/assets/1dd41876-f62c-4cd1-aeba-fc27d2368896" />
+
+
+- bills.html — see your unpaid bills
+  <img width="1920" height="1080" alt="Screenshot 2025-10-22 181637" src="https://github.com/user-attachments/assets/5e0e11d0-1c78-4b1e-9ac3-0487f154cf4b" />
+
+
+
+
+
+
 
 Visitor-friendly highlights
 - No installs needed for a quick look — simply open the HTML files.
